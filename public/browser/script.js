@@ -88,10 +88,6 @@ function sendInformation() {
   xhr.send(data);
 }
 
-function sendFEN() {
-
-}
-
 console.log(`We are playing as: ${isWhite() ? "white": "black"}`);
 
 
