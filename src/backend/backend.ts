@@ -18,7 +18,7 @@ namespace backend {
     app.post("/chess/update", ((req, res) => {
       let data = req.body;
       on_data_update(data);
-      res.send("");
+      res.send("OK");
     }))
 
     app.listen(3000, () => {
