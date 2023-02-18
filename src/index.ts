@@ -1,5 +1,3 @@
-console.clear();
-
 import stockfish from './stockfish/stockfish';
 import backend from './backend/backend'
 import { t_chess_update_data } from "./types/t_chess_update_data";
@@ -10,7 +8,6 @@ function chess_data_to_fen(game: t_chess_update_data): string {
   const board: string[][] = [];
   const { pieces, isWhite } = game;
 
-  // Initialize the board with empty spaces
   for (let i = 0; i < 8; i++) {
     board[i] = Array(8).fill("");
   }
@@ -32,7 +29,6 @@ function chess_data_to_fen(game: t_chess_update_data): string {
 
 
 
-  // Convert the board to a FEN string
   let fen = "";
   for (let i = 0; i < 8; i++) {
     if (i !== 0) fen += "/";
