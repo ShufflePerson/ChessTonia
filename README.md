@@ -5,6 +5,15 @@ Able to give the best move by stockfish from a live chess.com game. Basically a 
 
 **Please do not cheat against anyone, cheating is a scum thing to do**
 
+## Usage 
+1. Run the server with the command listed in the `Install` section.
+2. Go to `http://localhost:3000/browser/script.js`
+3. Copy everything displayed
+4. Go to your chess.com game, open the Developer Console (Right Click -> Inspect Element or F12 or Ctrl Shift + I)
+5. Go to the console tab, paste in the script and press enter
+6. Profit
+
+
 ## Install
 
 Clone the repo
@@ -24,6 +33,9 @@ Run it
 ```
 ts-node src/index.ts
 ```
+
+## Compiling Stockfish 
+For instructions on how to compile stockfish on your machine, head to [StockFish Github](https://github.com/official-stockfish/Stockfish)
 
 
 ## Contact
