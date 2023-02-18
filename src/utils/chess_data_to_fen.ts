@@ -1,4 +1,4 @@
-import { t_chess_update_data } from "./types/t_chess_update_data";
+import { t_chess_update_data } from "../types/t_chess_update_data";
 
 export function chess_data_to_fen(game: t_chess_update_data): string {
   const board: string[][] = [];

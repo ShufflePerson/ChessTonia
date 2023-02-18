@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors'
 import { t_chess_update_data } from '../types/t_chess_update_data';
+import get_config from '../utils/get_config';
 
 namespace backend {
   const app = express();
@@ -21,7 +22,7 @@ namespace backend {
       res.send("OK");
     }))
 
-    app.listen(3000, () => {
+    app.listen(get_config().SERVER_PORT, () => {
       console.debug("Backend is up and running");
     })
   }
