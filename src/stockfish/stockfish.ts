@@ -1,4 +1,5 @@
 import child_process from "child_process";
+import get_config from "../utils/get_config";
 
 namespace stockfish {
   let stock_process: child_process.ChildProcess;
@@ -18,7 +19,7 @@ namespace stockfish {
   }
 
   export function init() {
-    stock_process = child_process.spawn("./stockfish_bin");
+    stock_process = child_process.spawn(get_config().STOCKFISH_BINARY);
     if(stock_process == null) return;
 
     send_data("uci");
