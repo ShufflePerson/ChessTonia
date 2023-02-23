@@ -2,6 +2,10 @@
 
 ## Screenshots
 ![Screenshot](/images/screenshot.png)
+`e4e3` means move from e4 to e3
+
+## Keep in mind
+The `Animation Type` in chess.com settings must be set to one of these options: `None`, `Slow`, `Medium` or `Fast`. Any other type will not work
 
 ## Overview
 Able to give the best move by stockfish from a live chess.com game. Basically a Chess Cheat. 
